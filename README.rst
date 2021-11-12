@@ -44,10 +44,7 @@ Control Sonoff devices running original firmware, in LAN mode.
 
 To control Sonoff switches running the V3+ Itead firmware (tested on 3.0, 3.0.1, 3.1.0, 3.3.0, 3.4.0, 3.5.0), locally (LAN mode).
 
-# No longer maintained!
-This component is no longer being maintained, instead for Home Assistant users, use https://github.com/AlexxIT/SonoffLAN, which is more functional and stable. Any future contributions I make will be to this repo.
-
-Unfortunately @AlexxIT has not (yet) made his component callable outside of Home Assistant, but since I'm not using this component, I will not be maintaining it. Sorry.
+This is a fork of a not maintained code-base with some fixes and extra channel functionality in the CLI.
 
 **This will only work for Sonoff devices running V3+ of the stock (Itead / eWeLink) firmware. For users of V1.8.0 - V2.6.1, please use**  `PySonoffLAN <https://pypi.org/project/pysonofflan/>`_
 
@@ -102,6 +99,7 @@ Command-Line Usage
       -l, --level LVL  Either CRITICAL, ERROR, WARNING, INFO or DEBUG
       --help               Show this message and exit.
       --api_key KEY        Needed for devices not in DIY mode. See https://pysonofflanr3.readthedocs.io/encryption.html
+      --channel            Specifies switch channel, starting from 0
       
     Commands:
       discover  Discover devices in the network
